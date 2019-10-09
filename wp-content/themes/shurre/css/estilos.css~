@@ -1,0 +1,174 @@
+html {
+
+height: 93%;
+
+}
+
+a:visited {
+
+	color: white;
+}
+
+body {
+
+position: relative;
+height: 100%;
+
+}
+
+
+h1 {
+
+	font-size: 4.2rem;
+
+}
+
+.campo-formulario {
+
+	margin-bottom: 1rem;
+	
+	margin-top: 1rem;
+	
+	}
+
+.contenedor-boton-agregar {
+
+	position: fixed;
+	top: 0;
+
+}
+.contenedor-display-categoria {
+
+	border-radius: 1rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
+	
+}
+
+.contenedor-datos-autor {
+
+	align-items: center;
+	
+	margin-bottom: 0;
+	
+	margin-top: 0;
+	
+}
+
+.card .horizontal .card-image {
+	
+	max-width: 32px;
+	max-height: 32px;
+
+}
+
+.contenedor-post {
+	
+	position: relative;
+	height: 100%;
+	overflow-y: scroll;
+
+}
+
+.row {
+
+	position: relative;
+	height: 100%;
+}
+.site-footer {
+
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: 0px;
+	padding-top: 0px;
+}
+
+.titulo-footer {
+	
+	font-size: 0.6rem;
+
+}
+
+.site-header {
+
+	
+	height: 5%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	
+
+}
+
+.contenedor-navbar {
+	
+	position: relative;
+	height: 100%;
+	margin-bottom: 0;
+
+}
+
+.menu-items {
+
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+
+.sub-menu {
+
+	background-color: #009688;
+}
+
+.site {
+	position: relative;
+	height: 100%;
+}
+
+.site-content {
+
+	position: relative;
+	height: 85%;
+	
+}
+
+.content-area,
+.site-main {
+position: relative;
+	height: 100%;
+}
+
+.contenedor-publicacion {
+
+	position: relative;
+	height: 100%;
+	overflow-y: auto;
+
+}
+
+
+.contenedor-publicacion-single {
+
+	position: relative;
+	height: 70%;
+}
+
+.contenedor-links-post {
+
+	position: relative;
+	height: 3%;
+	
+}
+
+.comment-area {
+
+	position: relative;
+	height: 27%;
+
+}
+
+
+
+

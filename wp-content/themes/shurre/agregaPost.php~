@@ -1,0 +1,67 @@
+<?php
+	
+	/*
+   Plugin Name: Agrega Post
+   Plugin URI: http://my-awesomeness-emporium.com
+   description: >-
+  a plugin to create awesomeness and spread joy
+   Version: 1.2
+   Author: yo mismo
+   Author URI: http://mrtotallyawesome.com
+   License: GPL2
+   */
+   
+	$post_titulo = $_POST['post-titulo'];
+	
+	$post_intro = $_POST['post-intro'];
+	
+	$post_preparacion = $_POST['post-preparacion'];
+	
+	$post_ingredientes = $_POST['post-ingredientes'];
+	
+	$post_contenido = '<!-- wp:paragraph --><p>'.$post_intro.'</p><!-- /wp:paragraph -->\n'.
+							'<!-- wp:heading --><h3>Ingredientes<'.wp_slash().'h3><!-- '.wp_slash().'wp:heading -->'.
+							'<!-- wp:paragraph --><p>'.$post_ingredientes.'<'.wp_slash().'p><!-- '.wp_slash().'wp:paragraph -->'.
+							'<!-- wp:heading --><h3>Preparación<'.wp_slash().'h3><!-- '.wp_slash().'wp:heading -->'.
+							'<!-- wp:paragraph --><p>'.$post_preparacion.'<'.wp_slash().'p><!-- '.wp_slash().'wp:paragraph -->';
+	
+	
+	$nuevo_post = array(
+		'post_title' =>  $post_titulo,
+		'post_content' => $post_contenido,
+		'post_status'	=> 'publish'
+	);
+	
+	//$post_id = wp_insert_post($nuevo_post);
+	
+	wp_editor('','editor');
+	
+	/*
+// Check that the nonce is valid, and the user can edit this post.
+if ( 
+	isset( $_POST['my_image_upload_nonce'], $post_id ) 
+	&& wp_verify_nonce( $_POST['my_image_upload_nonce'], 'my_image_upload' )
+	&& current_user_can( 'edit_post', $post_id )
+) {
+	// The nonce was valid and the user has the capabilities, it is safe to continue.
+
+	// These files need to be included as dependencies when on the front end.
+	require_once( ABSPATH . 'wp-admin/includes/image.php' );
+	require_once( ABSPATH . 'wp-admin/includes/file.php' );
+	require_once( ABSPATH . 'wp-admin/includes/media.php' );
+	
+	// Let WordPress handle the upload.
+	// Remember, 'my_image_upload' is the name of our file input in our form above.
+	$attachment_id = media_handle_upload( 'my_image_upload', $post_id );
+	
+	if ( is_wp_error( $attachment_id ) ) {
+		echo 'error';// There was an error uploading the image.
+	} else {
+		echo 'todobien';// The image was uploaded successfully!
+	}
+
+} else {
+
+	echo 'error usuario';// The security check failed, maybe show the user an error.
+}*/
+	?>
